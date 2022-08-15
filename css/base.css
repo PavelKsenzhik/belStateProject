@@ -19,7 +19,7 @@ p,h1,h2,h3,h3,h4,h5,h6{
 
 .title{
     color: #4d99d6;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: 300;
     line-height: 68px;
