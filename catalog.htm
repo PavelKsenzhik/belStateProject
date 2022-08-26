@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Page</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/catalog.min.css">
+</head>
+
+<body>
+    <aside class="side-bar">
+    <div class="avatar">
+        <a href="account.htm" class="avatar__link">
+            <img class="avatar__img" src="./img/general/sideBar/side-bar__logo.png" alt="avatar profile">
+            <div class="avatar__text">
+                <p class="avatar__name">Екатерина Андреевна Смирнова</p>
+                <p class="avatar__info">Проектировщик категории жилых строений</p>
+            </div>
+        </a>
+    </div>
+    <ul class="side-bar__list">
+        <li class="side-bar__item">
+            <a class="side-bar__link" href="account.htm">
+                <img class="side-bar__icon" src="./img/general/sideBar/home.png">
+                <p class="side-bar__subtitle subtitle">Личный кабинет</p>
+            </a>
+        </li>
+        <li class="side-bar__item">
+            <a class="side-bar__link" href="my-links.htm">
+                <img class="side-bar__icon" src="./img/general/sideBar/link.png">
+                <p class="side-bar__subtitle subtitle">Мои ссылки</p>
+            </a>
+        </li>
+        <li class="side-bar__item">
+            <a class="side-bar__link" href="#">
+                <img class="side-bar__icon" src="./img/general/sideBar/notifications.webp">
+                <p class="side-bar__subtitle subtitle">Оповещения</p>
+            </a>
+        </li>
+        <li class="side-bar__item">
+            <a class="side-bar__link" href="#">
+                <img class="side-bar__icon" src="./img/general/sideBar/achievements.png">
+                <p class="side-bar__subtitle subtitle">Мои монеты</p>
+            </a>
+        </li>
+    </ul>
+</aside>
+    <div class="header-wrapper content">
+        <header class="header">
+    <nav class="top-menu">
+        <div class="top-menu__logo-wrapper">
+            <a class="top-menu__logo-link" href="index.htm"><img class="top-menu__logo"
+                    src="./img/general/header/logo.png" alt="logo"></a>
+        </div>
+        <ul class="top-menu__list">
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="catalog.htm">
+                    <div class="top-menu__img-item top-menu__image-item-1"></div>
+                    <span>Справочник</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="program.htm">
+                    <div class="top-menu__img-item top-menu__image-item-2"></div>
+                    <span>Программы</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="news.htm">
+                    <div class="top-menu__img-item top-menu__image-item-3"></div>
+                    <span>Новости</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="documents.htm">
+                    <div class="top-menu__img-item top-menu__image-item-4"></div>
+                    <span>Документы</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="union.htm">
+                    <div class="top-menu__img-item top-menu__image-item-5"></div>
+                    <span>Профсоюз</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="university.htm">
+                    <div class="top-menu__img-item top-menu__image-item-6"></div>
+                    <span>Наш университет</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
+                <a class="top-menu__link" href="employee.htm">
+                    <div class="top-menu__img-item top-menu__image-item-7"></div>
+                    <span>Новому сотруднику</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="bottom-menu">
+        <div class="back-nav">
+            <ul class="back-nav__list">
+
+            </ul>
+        </div>
+        <form class="search-bar">
+            <button class="search-bar__btn">
+                <img class="search-bar__icon" src="./img/general/header/search.png" alt="search-icon">
+            </button>
+            <input class="search-bar__input" type="text" placeholder="Поиск по сайту">
+        </form>
+    </div>
+</header>
+    </div>
+    <main class="catalog-content content main">
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__body">
+                    <div class="catalog__head">
+                        <h1 class="catalog__title title_primary">Справочник</h1>
+                        <form class="catalog__head-search-bar search-bar">
+                            <button class="catalog__head-search-btn search-bar__btn">
+                                <img class="catalog__head-search-icon search-bar__icon"
+                                    src="./img/general/header/search.png" alt="search-icon">
+                            </button>
+                            <input class="catalog__head-search-input search-bar__input" type="text"
+                                placeholder="Поиск по документам">
+                        </form>
+                    </div>
+                </div>
+                <div class="catalog__table-wrapper">
+                    <table class="catalog__table table">
+                        <tr class="table__row table__row-head">
+                            <th class="table__cell-head table__department">название отдела</th>
+                            <th class="table__cell-head table__job-title">должность</th>
+                            <th class="table__cell-head table__name">ФИО</th>
+                            <th class="table__cell-head table__tel">телефоны</th>
+                            <th class="table__cell-head table__interior-tel">внутр</th>
+                            <th class="table__cell-head table__email">email</th>
+                            <th class="table__cell-head table__room">комната</th>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell table__department table__cell_uppercase" rowspan="4">аппарат<br>управления</td>
+                            <td class="table__cell">Генеральный директор</td>
+                            <td class="table__cell">ЮШКЕВИЧ<br>Артем Владимирович</td>
+                            <td class="table__cell">226-88-22<br>203-82-11<br>(44) 543-71-80</td>
+                            <td class="table__cell">311</td>
+                            <td class="table__cell"><a class="table__link-email link" href="mailto:dir@belgos.by">dir@belgos.by</a></td>
+                            <td class="table__cell">404</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Приёмная, FAX</td>
+                            <td class="table__cell">УСОВИЧ<br>Светлана Ивановна</td>
+                            <td class="table__cell ">203-89-82<br>(29) 185-89-82<br>(29) 373-89-82</td>
+                            <td class="table__cell">311</td>
+                            <td class="table__cell"><a class="table__link-email link" href="mailto:"></a></td>
+                            <td class="table__cell">404</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Первый заместитель генерального директора - главный инженер</td>
+                            <td class="table__cell">МАЛИНОВСКИЙ<br>Максим Игоревич</td>
+                            <td class="table__cell">203-75-15<br>(29) 373-13-26</td>
+                            <td class="table__cell">311</td>
+                            <td class="table__cell"><a class="table__link-email link" href="mailto:ing@belgos.by">ing@belgos.by</a></td>
+                            <td class="table__cell">404</td>
+                        </tr>
+                        <tr class="table__row table__row-low">
+                            <td class="table__cell">Заместитель генерального директора по экономике - начальник ППО</td>
+                            <td class="table__cell">БУТЯНОВСКАЯ<br>Наталия Валерьевна</td>
+                            <td class="table__cell">226-94-74<br>(29) 647-87-20</td>
+                            <td class="table__cell ">311</td>
+                            <td class="table__cell"><a class="table__link-email link" href="mailto:bnv@belgos.by">bnv@belgos.by</a></td>
+                            <td class="table__cell">404</td>
+                        </tr>
+                        <tr class="table__row table__row-secondary">
+                            <td class="table__cell table__cell-secondary table__department table__cell_uppercase" rowspan="2">ОТДЕЛ<br>ДЕЛОПРОИЗВОДСТВА<br>(ОД), FAX</td>
+                            <td class="table__cell table__cell-secondary">Начальник отдела</td>
+                            <td class="table__cell table__cell-secondary">КАЛЕЙНИК
+                                Лидия Олеговна</td>
+                            <td class="table__cell table__cell-secondary">203-85-60
+                                (29) 155-75-12</td>
+                            <td class="table__cell table__cell-secondary ">300</td>
+                            <td class="table__cell table__cell-secondary"><a class="table__link-email link" href="mailto:belgos@belgos.by">belgos@belgos.by</a></td>
+                            <td class="table__cell table__cell-secondary">500А</td>
+                        </tr>
+                        <tr class="table__row table__row-secondary table__row-low">
+                            <td class="table__cell table__cell-secondary">Инспектор</td>
+                            <td class="table__cell table__cell-secondary">ШИШКОВСКАЯ
+                                Ирина Александровна</td>
+                            <td class="table__cell table__cell-secondary">203-85-60</td>
+                            <td class="table__cell table__cell-secondary ">300</td>
+                            <td class="table__cell table__cell-secondary"><a class="table__link-email link" href="mailto:belgos@belgos.by">belgos@belgos.by</a></td>
+                            <td class="table__cell table__cell-secondary">500А</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="catalog__documents documents">
+                <div class="container">
+                    <div class="catalog__documents-body documents__body accordion">
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ТЕХНИЧЕСКАЯ СЛУЖБА (ТС)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ГРУППА ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ (ГИТ)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ BIM</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eveniet deleniti ex tenetur ab officia, qui incidunt. Doloremque expedita corporis fugiat pariatur mollitia culpa eius beatae! Cupiditate minima adipisci voluptate maxime ipsam, officia fuga repellendus! Architecto ut, ipsa officia natus error iusto vero at, reprehenderit atque quod iste modi? Ullam, illum blanditiis, placeat nisi alias magnam ex vero nostrum beatae praesentium, distinctio velit asperiores quasi cum fuga libero enim. Natus aperiam corporis id. Quos sint ut magnam dolores qui vitae iusto, pariatur illum ipsam ipsum eaque. Repudiandae, voluptate labore sit pariatur ipsa minus omnis error cupiditate harum quo, cumque distinctio porro ullam dolorem laborum sint. Maiores aut ex eaque impedit nostrum doloremque tempore similique quas exercitationem necessitatibus omnis amet quaerat repellendus, et, corrupti voluptates quibusdam sed facilis voluptatibus sint quo quia, cum illum. Iusto quas laudantium ipsum nulla repudiandae, modi alias officiis quasi facere ipsa quos obcaecati optio. Sit deserunt, est mollitia doloribus labore cumque asperiores praesentium exercitationem error deleniti rerum accusamus provident modi vero ut omnis quod quis optio obcaecati, magni impedit explicabo sequi! Ipsam ipsum commodi rem impedit illum rerum optio necessitatibus, aut nobis amet repellat incidunt, nihil at atque, in sint non quia obcaecati neque temporibus voluptatem laboriosam harum et. Perferendis architecto dolore expedita unde tempore earum asperiores et mollitia explicabo accusantium. Nam quidem qui magni culpa ipsa, quis recusandae fugit, esse iusto autem dolores voluptatum ipsam consequatur sunt molestias, sit distinctio iste. Expedita, amet totam illum accusantium perspiciatis necessitatibus quas culpa vel placeat explicabo deleniti autem excepturi distinctio corrupti porro. Vel qui quisquam incidunt quaerat necessitatibus minus. Itaque quas dolor nam nemo harum optio natus deleniti quo maiores consequatur aliquam voluptas error quod distinctio, iste enim nobis provident eius quos recusandae in! Perspiciatis eum impedit voluptatibus expedita incidunt, accusantium consequuntur inventore modi sapiente. Hic, error consequatur.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ЮРИДИЧЕСКИЙ ОТДЕЛ (ЮО)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ПЕРСОНАЛА (ОП)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ БУХГАЛТЕРСКОГО УЧЁТА И ОТЧЁТНОСТИ (ОБУиО)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ МАРКЕТИНГА И ВНЕШНЕЭКОНОМИЧЕСКОЙ ДЕЯТЕЛЬНОСТИ (ОМиВЭД)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ПЛАНОВО-ПРОИЗВОДСТВЕННЫЙ ОТДЕЛ (ППО)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ УПРАВЛЕНИЯ ПРОИЗВОДСТВЕННОЙ ДЕЯТЕЛЬНОСТЬЮ (ОУПД)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ГРУППА УПРАВЛЕНИЯ ПРОЕКТАМИ ВСЕМИРНОГО БАНКА</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ИНЖЕНЕРНЫХ УСЛУГ</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">АРХИТЕКТУРНО–КОНСТРУКТОРСКАЯ МАСТЕРСКАЯ-1 (АКМ-1)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">АРХИТЕКТУРНО–КОНСТРУКТОРСКАЯ МАСТЕРСКАЯ-2 (АКМ-2)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">АРХИТЕКТУРНО–КОНСТРУКТОРСКАЯ МАСТЕРСКАЯ-3 (АКМ-3)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">АРХИТЕКТУРНО–КОНСТРУКТОРСКАЯ МАСТЕРСКАЯ-5 (АКМ-5)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">МАСТЕРСКАЯ ЛАНДШАФТНОЙ АРХИТЕКТУРЫ И ДИЗАЙНА (МЛАиД)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ТЕХНОЛОГИЧЕСКИЙ ОТДЕЛ (ТХО)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">САНТЕХНИЧЕСКИЙ ОТДЕЛ (СТО)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ЭЛЕКТРОТЕХНИЧЕСКОГО ПРОЕКТИРОВАНИЯ (ОЭТП)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ГЕНЕРАЛЬНОГО ПЛАНА И БЛАГОУСТРОЙСТВА (ОГПиБ)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ЭКОНОМИКИ И СМЕТ (ОЭС)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ВЫПУСКА ПРОЕКТОВ И ЭКСПЛУАТАЦИОННОГО ОБЕСПЕЧЕНИЯ</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ОТДЕЛ ПРОЕКТОВ «ВЕЛИКИЙ КАМЕНЬ» (ОПВК)</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">ФИЛИАЛ КАФЕДР БНТУ</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="document accordion__item">
+                            <div class="document__head accordion__head">
+                                <h3 class="document__subtitle subtitle">УПРАВЛЕНИЕ «МБИ»</h3>
+                                <div class="document__img-wrapper accordion__img-wrapper">
+                                    <img class="document__img accordion__img" src="./img/general/pages/catalog/plus.svg" alt="open">
+                                </div>
+                            </div>
+                            <div class="document__content accordion__content">
+                                <p class="document__descr desr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus, officia similique fugit facilis animi itaque est eum corrupti reprehenderit voluptatibus alias eligendi minus ducimus nulla iste. Officia, veritatis aliquid.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="" src="./js/catalog.min.js"></script>
+</body>
+
+</html>
