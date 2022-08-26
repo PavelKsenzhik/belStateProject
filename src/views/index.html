@@ -1,34 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Белгоспроект</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="/img/general/pages/index/favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script type='text/javascript' src="js/main.js"></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/sideBar/sideBar.html")
+    <div class="content">
         @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/vendor.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        <main class="main">
+            <section class="about">
+                <div class="about__body">
+                    <div class="about__info about__banner-wrapper">
+                        <h2 class="about__title title_primary">наша команда
+                        </h2>
+                        <h3 class="about__title title">наша гордость</h3>
+                    </div>
+                    <div class="birthdays">
+                        <div class="birthdays__head">
+                            <a class="birthdays__link subtitle_primary link" href="#">
+                                дни рождения
+                            </a>
+                            <img class="birthdays__icon" src="./img/general/pages/index/cal.png" alt="icon">
+                        </div>
+                        <div class="birthdays__profiles">
+                            @@include("../blocks/modules/profile/profile.html")
+                            @@include("../blocks/modules/profile/profile.html")
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Info -->
+
+            <section class="info">
+                <div class="info__body">
+                    <!-- News -->
+                    <div class="news">
+                        <div class="news__head">
+                            <a class="news__link subtitle_primary link" href="#">Новости</a>
+                            <img class="news__icon" src="img/general/pages/index/paper.png" alt="news">
+                        </div>
+                        <div class="news-slider">
+                            <div class="owl-carousel owl-theme" id="slider">
+                                <div class="slide">
+                                    <img src="./img/general/pages/index/foto-blog.png">
+                                    <span class="news-date">12.11.2022</span>
+                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                        масочный режим</a>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/general/pages/index/foto-blog.png">
+                                    <span class="news-date">13.11.2022</span>
+                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                        масочный режим</a>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/general/pages/index/foto-blog.png">
+                                    <span class="news-date">14.11.2022</span>
+                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                        масочный режим</a>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/general/pages/index/foto-blog.png">
+                                    <span class="news-date">15.11.2022</span>
+                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                        масочный режим</a>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/general/pages/index/foto-blog.png">
+                                    <span class="news-date">16.11.2022</span>
+                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                        масочный режим</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Benefits -->
+                    <div class="benefits">
+                        <h3 class="benefits__subtitle subtitle_primary">Бонусы компании</h3>
+                        <ul class="benefits__list">
+                            <li class="benefits__item">
+                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                                <p class="benefits__subtitle">Страхование</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                                <p class="benefits__subtitle">Повышение квалификации</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                                <p class="benefits__subtitle">Тренажерный зал</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                                <p class="benefits__subtitle">Билеты на мероприятия</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
+                                <p class="benefits__subtitle">Тимбилдинг</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
+                                <p class="benefits__subtitle">Материальная помощь</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Employees -->
+                    <div class="employees">
+                        <a class="employees__link subtitle_primary link" href="#">Новые сотрудники</a>
+                        <div class="employees__list">
+                            @@include("../blocks/modules/profile/profile.html")
+                            @@include("../blocks/modules/profile/profile.html")
+                        </div>
+                    </div>
+                    <div class="bottom-pannel">
+                        <button class="bottom-pannel__main-btn btn">задать вопрос руководству</button>
+                        <button class="bottom-pannel__sec-btn btn">sos</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>

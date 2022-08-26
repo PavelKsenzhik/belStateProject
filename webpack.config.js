@@ -2,7 +2,9 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        main: "./src/js/index.js"
+        main: "./src/js/index.js",
+        methodical: "./src/js/pages/methodical.js",
+        catalog: "/src/js/pages/catalog.js",
     },
 
     output: {

@@ -1,0 +1,119 @@
+$margin-left-avatar__img: 21px;
+$margin-left-icons: 50px;
+$position-left: -250px;
+$position-left-active: 250px;
+$anim-time: 0.4s;
+
+.side-bar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -250px;
+    width: 360px;
+    height: 100%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $main-color;
+    transition-duration: $anim-time;
+
+    &__list {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0px 0px 42px;
+    }
+
+    &__item{
+        margin-bottom: 32px;
+    }
+    &__item:hover {
+        opacity: 0.7;
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__icon {
+        position: relative;
+        top: 0;
+        left: $position-left-active;
+        width: 32px;
+        height: 32px;
+        margin-right: $margin-left-icons;
+        transition-duration: $anim-time;
+    }
+    &__subtitle {
+        position: relative;
+        top: 0;
+        left: $position-left;
+        margin: 0px;
+        color: #fff;
+        text-transform: uppercase;
+        transition-duration: calc($anim-time + 0.2s);
+
+    }
+
+}
+
+//  Avatar
+
+.avatar {
+    width: 100%;
+    display: flex;
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        position: relative;
+        top: 0;
+        left: $position-left-active;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-right: $margin-left-avatar__img;
+        transition-duration: $anim-time;
+    }
+    &__text {
+        position: relative;
+        top: 0;
+        left: $position-left;
+        color: #fff;
+        transition-duration: $anim-time;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+    &__info {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.side-bar:hover {
+    left: 0px;
+}
+.side-bar:hover .side-bar__icon {
+    left: 0px;
+}
+.side-bar:hover .side-bar__subtitle{
+    left: 0px;
+}
+
+
+.side-bar:hover .avatar__img {
+    left: 0px;
+}
+
+.side-bar:hover .avatar__text{
+    left: 0px;
+}

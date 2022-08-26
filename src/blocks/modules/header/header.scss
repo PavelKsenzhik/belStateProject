@@ -1,0 +1,211 @@
+.header {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 27px;
+      margin-bottom: 27px;
+}
+
+.top-menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      &__logo-wrapper {}
+
+      &__logo-link {}
+
+      &__logo {
+            padding: 0 20px;
+            width: 240px;
+            height: 57px;
+      }
+
+      &__list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+      }
+
+      &__item {
+            width: 14%;
+      }
+
+      &__link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+      }
+
+      &__link span {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $main-color;
+      }
+
+      &__link:hover span {
+            color: $main-active-color;
+      }
+
+      &__img-item {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 27px;
+            height: 27px;
+      }
+
+      &__image-item-1 {
+            background-image: url("../img/general/header/top_1.png");
+      }
+
+      &__image-item-2 {
+            background-image: url("../img/general/header/top_2.png");
+      }
+
+      &__image-item-3 {
+            background-image: url("../img/general/header/top_3.png");
+      }
+
+      &__image-item-4 {
+            background-image: url("../img/general/header/top_4.png");
+      }
+
+      &__image-item-5 {
+            background-image: url("../img/general/header/top_5.png");
+      }
+
+      &__image-item-6 {
+            background-image: url("../img/general/header/top_6.png");
+      }
+
+      &__image-item-7 {
+            background-image: url("../img/general/header/top_7.png");
+      }
+
+      // image-item:hover
+      &__link:hover &__image-item-1 {
+            background-image: url("../img/general/header/top_1r.png");
+      }
+
+      ;
+
+      &__link:hover &__image-item-2 {
+            background-image: url("../img/general/header/top_2r.png");
+      }
+
+      &__link:hover &__image-item-3 {
+            background-image: url("../img/general/header/top_3r.png");
+      }
+
+      &__link:hover &__image-item-4 {
+            background-image: url("../img/general/header/top_4r.png");
+      }
+
+      &__link:hover &__image-item-5 {
+            background-image: url("../img/general/header/top_5r.png");
+      }
+
+      &__link:hover &__image-item-6 {
+            background-image: url("../img/general/header/top_6r.png");
+      }
+
+      &__link:hover &__image-item-7 {
+            background-image: url("../img/general/header/top_7r.png");
+      }
+}
+
+.bottom-menu {
+      margin: 32px 0px 0px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-left: 48px;
+}
+
+.back-nav {
+      &__list {
+            display: flex;
+            align-items: center;
+            margin: 0;
+      }
+
+      &__item {
+            height: 100%;
+      }
+
+      &__link {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1e3d74;
+            letter-spacing: -0.5px;
+      }
+
+      &__link:visited {
+            color: #1e3d74;
+      }
+
+      &__link:hover {
+            color: #a10006;
+      }
+
+      &__link.current {
+            color: #000;
+      }
+
+      &__link span {
+            width: 8px;
+            height: 8px;
+            margin: 0px 8px;
+      }
+}
+
+.search-bar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: $seacrh-bar-width;
+      &__input {
+            width: 100%;
+            height: 47px;
+            background-color: #ebe8e9;
+            padding-left: 32px;
+            border-radius: 20px;
+            border: 1px solid #d0d0d0;
+            transition-duration: 0.2s;
+      }
+
+      &__input:hover {
+            background-color: #fff;
+            box-shadow: 0 0 5px rgb(68, 68, 68);
+      }
+
+      &__input:focus-visible {
+            background-color: #fff;
+            box-shadow: 0 0 5px rgb(68, 68, 68);
+      }
+}
+
+.search-bar {
+
+      &__btn {
+            position: absolute;
+            top: 50%;
+            // width of search-bar__input
+            right: 15px;
+            transform: translate(0%, -50%);
+      }
+
+      &__icon {
+            height: 23px;
+            width: 23px;
+      }
+}

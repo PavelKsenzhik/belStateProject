@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Page</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/account.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/sideBar/sideBar.html")
+    <div class="header-wrapper content">
+        @@include("../blocks/modules/header/header.html")
+    </div>
+    <main class="account-content content main">
+        <section class="account">
+            <div class="container">
+                <div class="account__body">
+                    <h1 class="account__title title_primary">Личный кабинет</h1>
+                    <div class="account__avatar">
+                        <img class="account__avatar-img" src="./img/general/pages/account/avatar.png" alt="avatar">
+                    </div>
+                    <div class="account__info">
+                        <p class="account__name descr">Иванова Мария Яковлевна</p>
+                        <p class="account__role descr">Проектировщик общественных зданий</p>
+                        <p class="account__tel descr">+375 (29) 3456789</p>
+                        <p class="account__mail descr">Maria_Ivanova@bgp.by</p>
+                        <p class="account__room descr">Кабинет 506</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
