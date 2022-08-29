@@ -1,0 +1,49 @@
+.notifications__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.notifications__title {
+  margin-bottom: 80px;
+}
+
+.notifications__list {
+  flex-grow: 1;
+}
+
+.notifications__bottom-pannel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notifications__bottom-btn {
+  padding: 21px 31px;
+}
+
+.notification {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.notification__date {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.notification__time {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 16px;
+}
+
+.notification__link {
+  font-size: 24px;
+  font-weight: 400;
+  color: #4d99d6;
+  border-bottom: 2px solid #4d99d6;
+}
+
+.notification__link:hover {
+  border-bottom: 2px solid #880015;
+}

@@ -644,6 +644,30 @@ h6 {
   color: #880015;
 }
 
+.top-menu__item_employee {
+  position: relative;
+}
+
+.top-menu__item_employee-top {
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 43px;
+  height: 25px;
+  background-image: url("../img/general/header/flag-employee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.top-menu__link_employee span {
+  color: #880015;
+}
+
+.top-menu__link_employee:hover span {
+  color: #4d99d6;
+}
+
 .top-menu__img-item {
   background-repeat: no-repeat;
   background-position: center;
@@ -676,8 +700,8 @@ h6 {
   background-image: url("../img/general/header/top_6.png");
 }
 
-.top-menu__image-item-7 {
-  background-image: url("../img/general/header/top_7.png");
+.top-menu__img-item_employee {
+  background-image: url("../img/general/header/top_7r.png");
 }
 
 .top-menu__link:hover .top-menu__image-item-1 {
@@ -704,8 +728,8 @@ h6 {
   background-image: url("../img/general/header/top_6r.png");
 }
 
-.top-menu__link:hover .top-menu__image-item-7 {
-  background-image: url("../img/general/header/top_7r.png");
+.top-menu__link:hover .top-menu__img-item_employee {
+  background-image: url("../img/general/header/top_7.png");
 }
 
 .bottom-menu {
@@ -955,7 +979,7 @@ h6 {
 
 .profile__tel {
   font-weight: 400;
-  color: #1e3d74;
+  color: #000;
 }
 
 .profile__tel:hover {
