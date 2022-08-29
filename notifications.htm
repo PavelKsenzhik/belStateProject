@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.min.css">
-    <link rel="stylesheet" href="styles/university.min.css">
+    <link rel="stylesheet" href="styles/notifications.min.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
         </li>
     </ul>
 </aside>
-    <div class="content">
+    <div class="header-wrapper content">
         <header class="header">
     <nav class="top-menu">
         <div class="top-menu__logo-wrapper">
@@ -125,60 +125,49 @@
     </div>
 </header>
     </div>
-
-    <main class="main">
-        <section class="about">
+    <main class="notifications-content content main">
+        <section class="notifications">
             <div class="container">
-                <div class="about__body">
-                    <h1 class="about__title title title_primary">корпоративный
-                        университет</h1>
-                    <div class="about__info">
-                        <div class="about__info-item">
-                            <img class="about__icon" src="./img/general/pages/university/calendar.png" alt="icon">
-                            <div class="about__text">
-                                <a class="about__link" href="methodical.htm">
-                                    <h4 class="about__subtitle subtitle_primary">методическая работа</h4>
-                                </a>
-                                <p class="about__descr descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
-                            </div>
-                        </div>
-                        <div class="about__info-item">
-                            <img class="about__icon" src="./img/general/pages/university/doc.png" alt="icon">
-                            <div class="about__text">
-                                <a class="about__link" href="#">
-                                    <h4 class="about__subtitle subtitle_primary">разъяснение ТНПА</h4>
-                                </a>
-                                <p class="about__descr descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Электроснабжение     
-                                    <a href="#" class="about__descr-link">Электроснабжение</a>      
-                                    <a href="#" class="about__descr-link">Электроснабжение</a>      
-                                    <a href="#" class="about__descr-link">Электроснабжение</a>      
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about__info-item">
-                            <img class="about__icon" src="./img/general/pages/university/doc.png" alt="icon">
-                            <div class="about__text">
-                                <a class="about__link" href="#">
-                                    <h4 class="about__subtitle subtitle_primary">СМК документы</h4>
-                                </a>
-                                <p class="about__descr descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                            </div>
-                        </div>
-                        <div class="about__info-item">
-                            <img class="about__icon" src="./img/general/pages/university/calendar.png" alt="icon">
-                            <div class="about__text">
-                                <a class="about__link" href="#">
-                                    <h4 class="about__subtitle subtitle_primary">приказы по орг. деятельности</h4>
-                                </a>
-                                <p class="about__descr descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an</p>
-                            </div>
-                        </div>
+                <div class="notifications__body">
+                    <h2 class="notifications__title title_primary">оповещения</h2>
+                    <ul class="notifications__list">
+                        <li class="notification">
+                            <p class="notification__date">01.05.2022</p>
+                            <p class="notification__time">13:05</p>
+                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                        </li>
+                        <li class="notification">
+                            <p class="notification__date">02.05.2022</p>
+                            <p class="notification__time">10:10</p>
+                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                        </li>
+                        <li class="notification">
+                            <p class="notification__date">03.05.2022</p>
+                            <p class="notification__time">09:05</p>
+                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                        </li>
+                        <li class="notification">
+                            <p class="notification__date">04.05.2022</p>
+                            <p class="notification__time">08:02</p>
+                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                        </li>
+                        <li class="notification">
+                            <p class="notification__date">05.05.2022</p>
+                            <p class="notification__time">10:05</p>
+                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                        </li>
+                        <li class="notification">
+                            <p class="notification__date">06.05.2022</p>
+                            <p class="notification__time">11:05</p>
+                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                        </li>
+                    </ul>
+                    <div class="notifications__bottom-pannel">
+                        <button class="notifications__bottom-btn btn">задать вопрос руководству</button>
                     </div>
-                    <button class="about__btn btn">задать вопрос руководству</button>
                 </div>
             </div>
         </section>
     </main>
 </body>
-
 </html>
