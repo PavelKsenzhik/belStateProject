@@ -72,44 +72,50 @@
         <ul class="top-menu__list">
             <li class="top-menu__item">
                 <a class="top-menu__link" href="catalog.htm">
-                    <div class="top-menu__img-item top-menu__image-item-1"></div>
+                    <div class="top-menu__img-item top-menu__image-item-catalog"></div>
                     <span>Справочник</span>
                 </a>
             </li>
             <li class="top-menu__item">
                 <a class="top-menu__link" href="program.htm">
-                    <div class="top-menu__img-item top-menu__image-item-2"></div>
+                    <div class="top-menu__img-item top-menu__image-item-programm"></div>
                     <span>Программы</span>
                 </a>
             </li>
             <li class="top-menu__item">
                 <a class="top-menu__link" href="news.htm">
-                    <div class="top-menu__img-item top-menu__image-item-3"></div>
+                    <div class="top-menu__img-item top-menu__image-item-news"></div>
                     <span>Новости</span>
                 </a>
             </li>
             <li class="top-menu__item">
                 <a class="top-menu__link" href="documents.htm">
-                    <div class="top-menu__img-item top-menu__image-item-4"></div>
+                    <div class="top-menu__img-item top-menu__image-item-docs"></div>
                     <span>Документы</span>
                 </a>
             </li>
             <li class="top-menu__item">
+                <a class="top-menu__link" href="meeting.htm">
+                    <div class="top-menu__img-item top-menu__image-item-meeting"></div>
+                    <span>Переговорная</span>
+                </a>
+            </li>
+            <li class="top-menu__item">
                 <a class="top-menu__link" href="union.htm">
-                    <div class="top-menu__img-item top-menu__image-item-5"></div>
+                    <div class="top-menu__img-item top-menu__image-item-union"></div>
                     <span>Профсоюз</span>
                 </a>
             </li>
             <li class="top-menu__item">
                 <a class="top-menu__link" href="university.htm">
-                    <div class="top-menu__img-item top-menu__image-item-6"></div>
+                    <div class="top-menu__img-item top-menu__image-item-university"></div>
                     <span>Наш университет</span>
                 </a>
             </li>
             <li class="top-menu__item top-menu__item_employee">
                 <div class="top-menu__item_employee-top"></div>
                 <a class="top-menu__link top-menu__link_employee" href="employee.htm">
-                    <div class="top-menu__img-item top-menu__image-item-7 top-menu__img-item_employee"></div>
+                    <div class="top-menu__img-item top-menu__img-item"></div>
                     <span>Новому сотруднику</span>
                 </a>
             </li>
@@ -130,24 +136,23 @@
     </div>
 </header>
     </div>
-    <div class="content">
-        <main class="main">
-            <section class="about">
-                <div class="about__body">
-                    <div class="about__info about__banner-wrapper">
-                        <h2 class="about__title title_primary">наша команда
-                        </h2>
-                        <h3 class="about__title title">наша гордость</h3>
+    <main class="main-content content main">
+        <section class="about">
+            <div class="about__body">
+                <div class="about__info about__banner-wrapper">
+                    <h2 class="about__title title_primary">наша команда
+                    </h2>
+                    <h3 class="about__title title">наша гордость</h3>
+                </div>
+                <div class="birthdays">
+                    <div class="birthdays__head">
+                        <a class="birthdays__link subtitle_primary link" href="birthdays.htm">
+                            дни рождения
+                        </a>
+                        <img class="birthdays__icon" src="./img/general/pages/index/cal.png" alt="icon">
                     </div>
-                    <div class="birthdays">
-                        <div class="birthdays__head">
-                            <a class="birthdays__link subtitle_primary link" href="birthdays.htm">
-                                дни рождения
-                            </a>
-                            <img class="birthdays__icon" src="./img/general/pages/index/cal.png" alt="icon">
-                        </div>
-                        <div class="birthdays__profiles">
-                            <div class="profile">
+                    <div class="birthdays__profiles">
+                        <div class="profile">
     <div class="profile__head">
         <img class="profile__avatar" src="./img/general/profile/profile-avatar.png" alt="avatar">
         <p class="profile__date">18 мая</p>
@@ -157,9 +162,10 @@
             Смирнова</p>
         <p class="profile__role">Проектировщик 1 категории жилых строений</p>
         <a class="profile__tel link" href="tel:+375292345657">тел: +375 29 234 56 57</a>
+        <p class="profile__descr"></p>
     </div>
 </div>
-                            <div class="profile">
+                        <div class="profile">
     <div class="profile__head">
         <img class="profile__avatar" src="./img/general/profile/profile-avatar.png" alt="avatar">
         <p class="profile__date">18 мая</p>
@@ -169,93 +175,94 @@
             Смирнова</p>
         <p class="profile__role">Проектировщик 1 категории жилых строений</p>
         <a class="profile__tel link" href="tel:+375292345657">тел: +375 29 234 56 57</a>
+        <p class="profile__descr"></p>
     </div>
 </div>
-                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Info -->
+        <!-- Info -->
 
-            <section class="info">
-                <div class="info__body">
-                    <!-- News -->
-                    <div class="news">
-                        <div class="news__head">
-                            <a class="news__link subtitle_primary link" href="#">Новости</a>
-                            <img class="news__icon" src="img/general/pages/index/paper.png" alt="news">
-                        </div>
-                        <div class="news-slider">
-                            <div class="owl-carousel owl-theme" id="slider">
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">12.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">13.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">14.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">15.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">16.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
+        <section class="info">
+            <div class="info__body">
+                <!-- News -->
+                <div class="news">
+                    <div class="news__head">
+                        <a class="news__link subtitle_primary link" href="#">Новости</a>
+                        <img class="news__icon" src="img/general/pages/index/paper.png" alt="news">
+                    </div>
+                    <div class="news-slider">
+                        <div class="owl-carousel owl-theme" id="slider">
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">12.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">13.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">14.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">15.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">16.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Benefits -->
-                    <div class="benefits">
-                        <h3 class="benefits__subtitle subtitle_primary">Бонусы компании</h3>
-                        <ul class="benefits__list">
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Страхование</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Повышение квалификации</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Тренажерный зал</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Билеты на мероприятия</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Тимбилдинг</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Материальная помощь</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Employees -->
-                    <div class="employees">
-                        <a class="employees__link subtitle_primary link" href="#">Новые сотрудники</a>
-                        <div class="employees__list">
-                            <div class="profile">
+                </div>
+                <!-- Benefits -->
+                <div class="benefits">
+                    <h3 class="benefits__subtitle subtitle_primary">Бонусы компании</h3>
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Страхование</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Повышение квалификации</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Тренажерный зал</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Билеты на мероприятия</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Тимбилдинг</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Материальная помощь</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Employees -->
+                <div class="employees">
+                    <a class="employees__link subtitle_primary link" href="#">Новые сотрудники</a>
+                    <div class="employees__list">
+                        <div class="profile">
     <div class="profile__head">
         <img class="profile__avatar" src="./img/general/profile/profile-avatar.png" alt="avatar">
         <p class="profile__date">18 мая</p>
@@ -265,9 +272,10 @@
             Смирнова</p>
         <p class="profile__role">Проектировщик 1 категории жилых строений</p>
         <a class="profile__tel link" href="tel:+375292345657">тел: +375 29 234 56 57</a>
+        <p class="profile__descr"></p>
     </div>
 </div>
-                            <div class="profile">
+                        <div class="profile">
     <div class="profile__head">
         <img class="profile__avatar" src="./img/general/profile/profile-avatar.png" alt="avatar">
         <p class="profile__date">18 мая</p>
@@ -277,20 +285,18 @@
             Смирнова</p>
         <p class="profile__role">Проектировщик 1 категории жилых строений</p>
         <a class="profile__tel link" href="tel:+375292345657">тел: +375 29 234 56 57</a>
+        <p class="profile__descr"></p>
     </div>
 </div>
-                        </div>
-                    </div>
-                    <div class="bottom-pannel">
-                        <button class="bottom-pannel__main-btn btn">задать вопрос руководству</button>
-                        <button class="bottom-pannel__sec-btn btn">sos</button>
                     </div>
                 </div>
-            </section>
-        </main>
-
-    </div>
-
+                <div class="bottom-pannel">
+                    <button class="bottom-pannel__main-btn btn">задать вопрос руководству</button>
+                    <button class="bottom-pannel__sec-btn btn">sos</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="js/main.min.js"></script>
