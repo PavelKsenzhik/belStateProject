@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  height: 40vh;
+  height: 35vh;
 }
 
 .about__body {
@@ -10,7 +10,7 @@
 
 .about__info {
   width: 60%;
-  height: calc(40vh + 72px);
+  height: calc(35vh + 72px);
   position: relative;
   z-index: 0;
   top: -72px;

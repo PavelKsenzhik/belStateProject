@@ -676,60 +676,60 @@ h6 {
   height: 27px;
 }
 
-.top-menu__image-item-1 {
+.top-menu__image-item-catalog {
   background-image: url("../img/general/header/top_1.png");
 }
 
-.top-menu__image-item-2 {
+.top-menu__image-item-programm {
   background-image: url("../img/general/header/top_2.png");
 }
 
-.top-menu__image-item-3 {
+.top-menu__image-item-news {
   background-image: url("../img/general/header/top_3.png");
 }
 
-.top-menu__image-item-4 {
+.top-menu__image-item-docs {
   background-image: url("../img/general/header/top_4.png");
 }
 
-.top-menu__image-item-5 {
+.top-menu__image-item-meeting {
+  background-image: url("../img/general/header/meeting.png");
+}
+
+.top-menu__image-item-union {
   background-image: url("../img/general/header/top_5.png");
 }
 
-.top-menu__image-item-6 {
+.top-menu__image-item-university {
   background-image: url("../img/general/header/top_6.png");
 }
 
-.top-menu__img-item_employee {
-  background-image: url("../img/general/header/top_7r.png");
-}
-
-.top-menu__link:hover .top-menu__image-item-1 {
+.top-menu__link:hover .top-menu__image-item-catalog {
   background-image: url("../img/general/header/top_1r.png");
 }
 
-.top-menu__link:hover .top-menu__image-item-2 {
+.top-menu__link:hover .top-menu__image-item-programm {
   background-image: url("../img/general/header/top_2r.png");
 }
 
-.top-menu__link:hover .top-menu__image-item-3 {
+.top-menu__link:hover .top-menu__image-item-news {
   background-image: url("../img/general/header/top_3r.png");
 }
 
-.top-menu__link:hover .top-menu__image-item-4 {
+.top-menu__link:hover .top-menu__image-item-docs {
   background-image: url("../img/general/header/top_4r.png");
 }
 
-.top-menu__link:hover .top-menu__image-item-5 {
+.top-menu__link:hover .top-menu__image-item-meeting {
+  background-image: url("../img/general/header/meeting_r.png");
+}
+
+.top-menu__link:hover .top-menu__image-item-union {
   background-image: url("../img/general/header/top_5r.png");
 }
 
-.top-menu__link:hover .top-menu__image-item-6 {
+.top-menu__link:hover .top-menu__image-item-university {
   background-image: url("../img/general/header/top_6r.png");
-}
-
-.top-menu__link:hover .top-menu__img-item_employee {
-  background-image: url("../img/general/header/top_7.png");
 }
 
 .bottom-menu {
@@ -939,14 +939,13 @@ h6 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .profile__head {
   height: 20%;
   display: flex;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: 32px;
 }
 
 .profile__avatar {
