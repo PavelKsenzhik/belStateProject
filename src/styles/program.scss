@@ -1,3 +1,6 @@
+@import "helpers/variables";
+
+
 .program-content {
     padding-right: 0px;
 }
@@ -74,5 +77,95 @@
     &__btn {
         width: 394px;
         align-self: flex-end;
+    }
+}
+
+@media (max-width: 1650px) {
+    .program{
+        &__info-item {
+            width: 47%;
+        }
+    }
+}
+
+@media (max-width: 1560px) {
+    .program {
+		&__title {
+            width: 100%;
+            margin-bottom: 60px;
+		}
+		&__info {
+            width: 100%;
+		}
+		&__descr {
+            text-shadow: 0px 0px .5px #000;
+		}
+}
+
+}
+
+@media (max-width: 1100px) {
+    .program {
+		&__title {
+            font-size: 50px;
+		}
+		&__info {
+            width: 100%;
+		}
+		&__descr {
+            text-shadow: 0px 0px .5px #000;
+		}
+}
+}
+
+@media (max-width: 840px) {
+    .program {
+		&__title {
+            font-size: 50px;
+		}
+		&__info {
+            width: 100%;
+		}
+		&__info-item {
+            width: 100%;
+		}
+		&__descr {
+            text-shadow: 0px 0px .5px #000;
+		}
+}
+}
+
+@media (max-width: 650px) {
+    .program {
+		&__body {
+            padding-right: 24px;
+		}
+		&__title {
+            font-size: 40px;
+            line-height: 50px;
+		}
+		&__info {
+            width: 100%;
+		}
+		&__info-item {
+            width: 100%;
+		}
+		&__icon {
+            margin-right: 16px;
+		}
+
+		&__descr {
+            text-shadow: 0px 0px .5px #000;
+		}
+}  
+}
+
+@media (max-width: 470px) {
+    .program {
+		&__title {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 400;
+		}
     }
 }

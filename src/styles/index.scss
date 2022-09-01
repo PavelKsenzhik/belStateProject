@@ -1,7 +1,7 @@
 @import "helpers/variables";
 
 .main-content{
-    
+    padding-right: 0px;
 }
 
 // About
@@ -152,6 +152,7 @@
 
 .bottom-pannel {
     position: absolute;
+    padding-right: 60px;
     bottom: -30px;
     right: 0;
     display: flex;
