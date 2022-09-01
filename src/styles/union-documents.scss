@@ -1,19 +1,17 @@
 @import "helpers/variables";
 
-.documents-content {
+
+.union-documents-content {
     padding-right: 0px;
     padding-top: 0px;
-}
-.documents {
 }
 
 // Documents Head
 
-.documents {
+.union-documents {
     &__head {
         width: 100%;
         height: 65px;
-        background-color: #f3f3f3;
     }
     &__head-pannel {
         width: 100%;
@@ -22,26 +20,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    &__head-links {
-        width: calc(65% - 4px);
-        display: flex;
-    }
-    &__head-item {
-
-    }
-    &__head-link {
-        color: $main-secondary-color;
-        margin-right: 40px;
-        border-bottom: 2px solid $main-secondary-color;
-        &:hover {
-            border-bottom: 2px solid $link-hover-color;
-        }
-        &.active{
-            cursor: default;
-            color: $main-color;
-            border: none;
-        }
     }
     &__head-search-bar {
         display: flex;
@@ -59,7 +37,7 @@
 
 // Download Field
 
-.documents {
+.union-documents {
     &__download-field {
     }
     &__download-field-list {

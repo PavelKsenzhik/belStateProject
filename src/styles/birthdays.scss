@@ -1,0 +1,101 @@
+@import "helpers/variables";
+
+.birthdays-content {}
+
+.birthdays {
+    &__body {
+        min-height: 70vh;
+    }
+
+    &__head {
+        margin-bottom: 80px;
+    }
+
+    &__days {
+        margin-bottom: 60px;
+    }
+
+    &__day {
+        min-height: 240px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid $secondary-color;
+        padding: 32px 0px;
+
+        &:nth-child(1) {
+            padding-top: 0px;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__day-subtitle {
+        margin-right: 120px;
+    }
+
+    &__day-accounts {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__bottom-pannel {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 60px
+    }
+
+    &__bottom-btn {
+        padding: 21px 31px;
+    }
+}
+
+.profile {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__head {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__date {
+        display: none;
+    }
+
+    &__text {
+        width: 70%;
+    }
+
+    &__name {
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__role {
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    &__tel {
+        font-weight: 400;
+        color: #000;
+
+        &:hover {
+            color: $link-hover-color;
+
+        }
+    }
+}

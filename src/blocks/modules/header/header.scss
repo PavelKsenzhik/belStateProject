@@ -31,7 +31,6 @@
       &__item {
             width: 14%;
       }
-
       &__link {
             display: flex;
             flex-direction: column;
@@ -52,6 +51,28 @@
       &__link:hover span {
             color: $main-active-color;
       }
+      
+      // Styles for New employee link
+      &__item_employee {
+            position: relative;
+      }
+      &__item_employee-top {
+            position: absolute;
+            top: -27px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 43px;
+            height: 25px;
+            background-image: url("../img/general/header/flag-employee.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+      }
+      &__link_employee span {
+            color: $main-active-color;
+      }
+      &__link_employee:hover span {
+            color: $main-secondary-color;
+      }
 
       &__img-item {
             background-repeat: no-repeat;
@@ -61,63 +82,62 @@
             height: 27px;
       }
 
-      &__image-item-1 {
+      &__image-item-catalog {
             background-image: url("../img/general/header/top_1.png");
       }
 
-      &__image-item-2 {
+      &__image-item-programm {
             background-image: url("../img/general/header/top_2.png");
       }
 
-      &__image-item-3 {
+      &__image-item-news {
             background-image: url("../img/general/header/top_3.png");
       }
 
-      &__image-item-4 {
+      &__image-item-docs {
             background-image: url("../img/general/header/top_4.png");
       }
 
-      &__image-item-5 {
+      &__image-item-meeting {
+            background-image: url("../img/general/header/meeting.png");
+      }
+
+      &__image-item-union {
             background-image: url("../img/general/header/top_5.png");
       }
 
-      &__image-item-6 {
+      &__image-item-university {
             background-image: url("../img/general/header/top_6.png");
       }
 
-      &__image-item-7 {
-            background-image: url("../img/general/header/top_7.png");
-      }
 
       // image-item:hover
-      &__link:hover &__image-item-1 {
+      &__link:hover &__image-item-catalog {
             background-image: url("../img/general/header/top_1r.png");
       }
 
-      ;
-
-      &__link:hover &__image-item-2 {
+      &__link:hover &__image-item-programm {
             background-image: url("../img/general/header/top_2r.png");
       }
 
-      &__link:hover &__image-item-3 {
+      &__link:hover &__image-item-news {
             background-image: url("../img/general/header/top_3r.png");
       }
 
-      &__link:hover &__image-item-4 {
+      &__link:hover &__image-item-docs {
             background-image: url("../img/general/header/top_4r.png");
       }
 
-      &__link:hover &__image-item-5 {
+      &__link:hover &__image-item-meeting {
+            background-image: url("../img/general/header/meeting_r.png");
+      }
+
+      &__link:hover &__image-item-union {
             background-image: url("../img/general/header/top_5r.png");
       }
 
-      &__link:hover &__image-item-6 {
+      &__link:hover &__image-item-university {
             background-image: url("../img/general/header/top_6r.png");
-      }
-
-      &__link:hover &__image-item-7 {
-            background-image: url("../img/general/header/top_7r.png");
       }
 }
 

@@ -26,124 +26,122 @@
 
 <body>
     @@include("../blocks/modules/sideBar/sideBar.html")
-    <div class="content">
+    <div class="header-wrapper content">
         @@include("../blocks/modules/header/header.html")
-        <main class="main">
-            <section class="about">
-                <div class="about__body">
-                    <div class="about__info about__banner-wrapper">
-                        <h2 class="about__title title_primary">наша команда
-                        </h2>
-                        <h3 class="about__title title">наша гордость</h3>
+    </div>
+    <main class="main-content content main">
+        <section class="about">
+            <div class="about__body">
+                <div class="about__info about__banner-wrapper">
+                    <h2 class="about__title title_primary">наша команда
+                    </h2>
+                    <h3 class="about__title title">наша гордость</h3>
+                </div>
+                <div class="birthdays">
+                    <div class="birthdays__head">
+                        <a class="birthdays__link subtitle_primary link" href="birthdays.htm">
+                            дни рождения
+                        </a>
+                        <img class="birthdays__icon" src="./img/general/pages/index/cal.png" alt="icon">
                     </div>
-                    <div class="birthdays">
-                        <div class="birthdays__head">
-                            <a class="birthdays__link subtitle_primary link" href="#">
-                                дни рождения
-                            </a>
-                            <img class="birthdays__icon" src="./img/general/pages/index/cal.png" alt="icon">
-                        </div>
-                        <div class="birthdays__profiles">
-                            @@include("../blocks/modules/profile/profile.html")
-                            @@include("../blocks/modules/profile/profile.html")
-                        </div>
+                    <div class="birthdays__profiles">
+                        @@include("../blocks/modules/profile/profile.html")
+                        @@include("../blocks/modules/profile/profile.html")
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Info -->
+        <!-- Info -->
 
-            <section class="info">
-                <div class="info__body">
-                    <!-- News -->
-                    <div class="news">
-                        <div class="news__head">
-                            <a class="news__link subtitle_primary link" href="#">Новости</a>
-                            <img class="news__icon" src="img/general/pages/index/paper.png" alt="news">
-                        </div>
-                        <div class="news-slider">
-                            <div class="owl-carousel owl-theme" id="slider">
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">12.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">13.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">14.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">15.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
-                                <div class="slide">
-                                    <img src="./img/general/pages/index/foto-blog.png">
-                                    <span class="news-date">16.11.2022</span>
-                                    <a href="#">О введении масочного режима на территории компании вводится обязательный
-                                        масочный режим</a>
-                                </div>
+        <section class="info">
+            <div class="info__body">
+                <!-- News -->
+                <div class="news">
+                    <div class="news__head">
+                        <a class="news__link subtitle_primary link" href="#">Новости</a>
+                        <img class="news__icon" src="img/general/pages/index/paper.png" alt="news">
+                    </div>
+                    <div class="news-slider">
+                        <div class="owl-carousel owl-theme" id="slider">
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">12.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">13.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">14.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">15.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/general/pages/index/foto-blog.png">
+                                <span class="news-date">16.11.2022</span>
+                                <a href="#">О введении масочного режима на территории компании вводится обязательный
+                                    масочный режим</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Benefits -->
-                    <div class="benefits">
-                        <h3 class="benefits__subtitle subtitle_primary">Бонусы компании</h3>
-                        <ul class="benefits__list">
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Страхование</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Повышение квалификации</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Тренажерный зал</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Билеты на мероприятия</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Тимбилдинг</p>
-                            </li>
-                            <li class="benefits__item">
-                                <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
-                                <p class="benefits__subtitle">Материальная помощь</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Employees -->
-                    <div class="employees">
-                        <a class="employees__link subtitle_primary link" href="#">Новые сотрудники</a>
-                        <div class="employees__list">
-                            @@include("../blocks/modules/profile/profile.html")
-                            @@include("../blocks/modules/profile/profile.html")
-                        </div>
-                    </div>
-                    <div class="bottom-pannel">
-                        <button class="bottom-pannel__main-btn btn">задать вопрос руководству</button>
-                        <button class="bottom-pannel__sec-btn btn">sos</button>
+                </div>
+                <!-- Benefits -->
+                <div class="benefits">
+                    <h3 class="benefits__subtitle subtitle_primary">Бонусы компании</h3>
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Страхование</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Повышение квалификации</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Тренажерный зал</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Билеты на мероприятия</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Тимбилдинг</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/general/pages/index/team.png" alt="benefit" class="benefits__icon">
+                            <p class="benefits__subtitle">Материальная помощь</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Employees -->
+                <div class="employees">
+                    <a class="employees__link subtitle_primary link" href="#">Новые сотрудники</a>
+                    <div class="employees__list">
+                        @@include("../blocks/modules/profile/profile.html")
+                        @@include("../blocks/modules/profile/profile.html")
                     </div>
                 </div>
-            </section>
-        </main>
-
-    </div>
-
+                <div class="bottom-pannel">
+                    <button class="bottom-pannel__main-btn btn">задать вопрос руководству</button>
+                    <button class="bottom-pannel__sec-btn btn">sos</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="js/main.js"></script>

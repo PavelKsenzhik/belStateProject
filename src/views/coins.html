@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Page</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/coins.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/sideBar/sideBar.html")
+    <div class="header-wrapper content">
+        @@include("../blocks/modules/header/header.html")
+    </div>
+    <main class="coins-content content main">
+        <section class="coins">
+            <div class="container">
+                <div class="coins__body">
+                    <h2 class="coins__title title_primary">Принимай участие в программе!</h2>
+                    <div class="coins__main-content">
+                        <p class="coins__amount">100<br>
+                            монет</p>
+                        <ul class="coins__list">
+                            <li class="coins__item">
+                                <div class="coins__item-amout-wrapper">
+                                    <p class="coins__item-amout">10</p>
+                                </div>
+                                <p class="coins__item-achievement">За участие в спартакиаде</p>
+                                <p class="coins__item-date">01.05.2022</p>
+                            </li>
+                            <li class="coins__item">
+                                <div class="coins__item-amout-wrapper">
+                                    <p class="coins__item-amout">5</p>
+                                </div>
+                                <p class="coins__item-achievement">За участие в спартакиаде</p>
+                                <p class="coins__item-date">01.05.2022</p>
+                            </li>
+                            <li class="coins__item">
+                                <div class="coins__item-amout-wrapper">
+                                    <p class="coins__item-amout">20</p>
+                                </div>
+                                <p class="coins__item-achievement">За участие в спартакиаде</p>
+                                <p class="coins__item-date">01.05.2022</p>
+                            </li>
+                            <li class="coins__item">
+                                <div class="coins__item-amout-wrapper">
+                                    <p class="coins__item-amout">30</p>
+                                </div>
+                                <p class="coins__item-achievement">За участие в спартакиаде</p>
+                                <p class="coins__item-date">01.05.2022</p>
+                            </li>
+                        </ul>
+                        <div class="coins__links-wrapper">
+                            <ul class="coins__links">
+                                <li class="coins__download-field-item download-field__item">
+                                    <a class="coins__download-field-link download-field__link link" href="#" download="">
+                                        <p class="coins__download-field-text download-field__text">Правила программы</p>
+                                        <img class="coins__download-field-icon download-field__icon" src="./img/general/pages/coins/pdf.svg" alt="icon">
+                                        <span class="coins__download-field-size download-field__size">1,2 мб</span>
+                                        <span class="coins__download-field-type download-field__type">pdf</span>
+                                    </a>
+                                </li>
+                                <li class="coins__download-field-item download-field__item">
+                                    <a class="coins__download-field-link download-field__link link" href="#" download="">
+                                        <p class="coins__download-field-text download-field__text">Варианты обмена</p>
+                                        <img class="coins__download-field-icon download-field__icon" src="./img/general/pages/coins/pdf.svg" alt="icon">
+                                        <span class="coins__download-field-size download-field__size">1,2 мб</span>
+                                        <span class="coins__download-field-type download-field__type">pdf</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="coins__bottom-pannel">
+                        <button class="coins__bottom-btn btn">задать вопрос руководству</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
