@@ -248,10 +248,7 @@
 }
 
 @media (max-width: 1845px) {
-      .header {}
-
       .top-menu {
-
             &__logo {
                   width: 233px;
                   height: 50px;
@@ -264,55 +261,71 @@
 }
 
 @media (max-width: 1650px) {
-      .header {}
-
       .top-menu {
-
             &__link span {
                   font-size: 16px;
             }
       }
-
-      .bottom-menu {}
-
       .back-nav {
             &__list {}
       }
-
-      .search-bar {
-            &__btn {}
-
-            &__icon {}
-
-            &__input {}
-      }
-
 }
+
+/* Z-index
+
+side-bar: 999
+top-menu__list : 10
+burger: 11
+
+*/
 
 @media (max-width: 1320px) {
       .top-menu {
             justify-content: space-between;
       }
       .top-menu__list {
-            width: 400px;
+            height: 400px;
             position: absolute;
-            right: -400px;
-            flex-direction: column;
-            background-color: $main-secondary-color;
+            top: -400px;
+            background-color: #000;
+            z-index: 10;
+            transition-duration: 0.4s;
+            &._active {
+                  height: 100vh;
+                  bottom: 0;
+                  right: 0;
+
+            }
       }
       .burger {
+            position: relative;
             display: flex;
             flex-direction: column;
-            &._active .burger__line{
-                  &:nth-child(1) {
-                        transform: rotate(45deg);
-                  }
-            }
             &__line {
                   width: 32px;
                   height: 4px;
                   margin-bottom: 4px;
                   background-color: $main-color;
+                  transition-duration: 0.2s;
+            }
+            &._active {
+                  z-index: 11;
+            }
+            &._active .burger__line{
+                  position: relative;
+                  &:nth-child(1) {
+                        transform: rotate(135deg);
+                        
+                        background-color: #fff;
+                  }
+                  &:nth-child(2) {
+                        display: none;
+                  }
+                  &:nth-child(3) {
+                        top: -8px;
+                        transform: rotate(-135deg);
+                        background-color: #fff;
+                  }
             }
       }
 }

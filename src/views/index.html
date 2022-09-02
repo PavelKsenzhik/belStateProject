@@ -59,7 +59,7 @@
                 <!-- News -->
                 <div class="news">
                     <div class="news__head">
-                        <a class="news__link subtitle_primary link" href="#">Новости</a>
+                        <a class="news__link subtitle_primary link" href="news.html">Новости</a>
                         <img class="news__icon" src="img/general/pages/index/paper.png" alt="news">
                     </div>
                     <div class="news-slider">
@@ -99,7 +99,9 @@
                 </div>
                 <!-- Benefits -->
                 <div class="benefits">
-                    <h3 class="benefits__subtitle subtitle_primary">Бонусы компании</h3>
+                    <h3 class="benefits__subtitle subtitle_primary">
+                        <a class="benefits__link link" href="benefits.html">Бенефиты</a>
+                    </h3>
                     <ul class="benefits__list">
                         <li class="benefits__item">
                             <img src="./img/general/pages/index/galka.png" alt="benefit" class="benefits__icon">
@@ -129,21 +131,20 @@
                 </div>
                 <!-- Employees -->
                 <div class="employees">
-                    <a class="employees__link subtitle_primary link" href="#">Новые сотрудники</a>
+                    <h3 class="employees__subtitle subtitle_primary">Новые сотрудники</h3>
                     <div class="employees__list">
                         @@include("../blocks/modules/profile/profile.html")
                         @@include("../blocks/modules/profile/profile.html")
                     </div>
                 </div>
-                <div class="bottom-pannel">
-                    <button class="bottom-pannel__main-btn btn">задать вопрос руководству</button>
-                    <button class="bottom-pannel__sec-btn btn">sos</button>
-                </div>
             </div>
         </section>
     </main>
 
-
+    <div class="bottom-pannel">
+        @@include("../blocks/modules/support/support.html")
+        <button class="bottom-pannel__sos-btn btn">sos</button>
+    </div>
     <script src="js/main.js"></script>
 </body>
 

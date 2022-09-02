@@ -132,15 +132,9 @@
     flex-direction: column;
     background-size: 140%;
     background-color: #f3f3f3;
-    &__link {
+    &__subtitle {
         color: $link-hover-color;
         margin-bottom: 32px;
-        &:hover {
-            color: $link-active-color;
-        }
-        &:active { 
-            color: $link-hover-color;
-        }
     }
     &__list {
         display: flex;
@@ -162,7 +156,7 @@
         margin-right: 16px;
         font-size: 22px;
     }
-    &__sec-btn {
+    &__sos-btn {
         border-color: $main-active-color;
         color: $main-active-color;
         padding: 21px 31px;

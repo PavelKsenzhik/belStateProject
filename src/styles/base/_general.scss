@@ -80,15 +80,33 @@ p,h1,h2,h3,h3,h4,h5,h6{
     color: $link-active-color;
 }
 
+// Main
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Container */
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
     padding: 0px 0px 0px 60px;
 }
 
 /* Content */
+
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .content {
     padding: 0px 60px 0px 109px;
