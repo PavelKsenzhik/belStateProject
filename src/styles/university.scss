@@ -1,9 +1,9 @@
 /* About */
 
 .about {
-    /* Calc(100vh - height of header - margin-bottom of header ) */
     width: 100%;
     margin-top: 70px;
+    flex-grow: 1;
     background-image: url('../img/general/pages//university/about-bg.png');
     background-size: cover;
     background-repeat: no-repeat;

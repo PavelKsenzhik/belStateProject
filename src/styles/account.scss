@@ -1,4 +1,6 @@
 .account {
+    display: flex;
+    flex-direction: column;
     &__body {
         min-height: 300px;
         display: flex;

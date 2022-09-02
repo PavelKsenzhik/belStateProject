@@ -22,30 +22,34 @@
 </head>
 
 <body>
-    @@include("../blocks/modules/sideBar/sideBar.html")
-    <div class="header-wrapper content">
-        @@include("../blocks/modules/header/header.html")
-    </div>
-    <main class="account-content content main">
-        <section class="account">
-            <div class="container">
-                <div class="account__body">
-                    <h1 class="account__title title_primary">Личный кабинет</h1>
-                    <div class="account__avatar">
-                        <img class="account__avatar-img" src="./img/general/pages/account/avatar.png" alt="avatar">
+    <div class="content-wrapper">
+        @@include("../blocks/modules/sideBar/sideBar.html")
+        <div class="content">
+            @@include("../blocks/modules/header/header.html")
+        </div>
+        <main class="main">
+            <section class="account">
+                <div class="container">
+                    <div class="account__body">
+                        <h1 class="account__title title_primary">Личный кабинет</h1>
+                        <div class="account__avatar">
+                            <img class="account__avatar-img" src="./img/general/pages/account/avatar.png" alt="avatar">
+                        </div>
+                        <div class="account__info">
+                            <p class="account__name descr">Иванова Мария Яковлевна</p>
+                            <p class="account__role descr">Проектировщик общественных зданий</p>
+                            <p class="account__tel descr">+375 (29) 3456789</p>
+                            <p class="account__mail descr">Maria_Ivanova@bgp.by</p>
+                            <p class="account__room descr">Кабинет 506</p>
+                        </div>
                     </div>
-                    <div class="account__info">
-                        <p class="account__name descr">Иванова Мария Яковлевна</p>
-                        <p class="account__role descr">Проектировщик общественных зданий</p>
-                        <p class="account__tel descr">+375 (29) 3456789</p>
-                        <p class="account__mail descr">Maria_Ivanova@bgp.by</p>
-                        <p class="account__room descr">Кабинет 506</p>
-                    </div>
+                    @@include("../blocks/modules/support/support.html")
                 </div>
-            </div>
-        </section>
-    </main>
-    @@include("../blocks/modules/support/support.html")
+            </section>
+        </main>
+        
+    </div>
+
 
 
     <script type='text/javascript' src="js/main.js"></script>
