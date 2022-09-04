@@ -1,0 +1,121 @@
+.union-documents-content {
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.union-documents__head {
+  width: 100%;
+  height: 65px;
+}
+.union-documents__head-pannel {
+  width: 100%;
+  height: 100%;
+  padding-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.union-documents__head-search-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(35% + 4px);
+}
+.union-documents__head-search-input {
+  width: 100%;
+}
+
+.download-field__list {
+  display: flex;
+  flex-direction: column;
+}
+.download-field__list span {
+  margin-right: 8px;
+}
+.download-field__item {
+  margin-top: 32px;
+}
+.download-field__link {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.download-field__text {
+  font-size: 24px;
+  color: #000;
+  margin-right: 8px;
+}
+.download-field__text:hover {
+  color: #880015;
+}
+.download-field__icon {
+  width: 31px;
+  height: 35px;
+  margin-right: 8px;
+}
+.download-field__size {
+  color: #000;
+}
+.download-field__type {
+  color: #000;
+}
+
+.bottom-pannel {
+  margin-top: 40px;
+}
+.bottom-pannel__body {
+  width: 100%;
+  padding-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-pannel__btn {
+  padding: 21px 31px;
+}
+
+.pager {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pager__arrow-link {
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 50%;
+  background-color: #4d99d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pager__arrow-link:hover {
+  background-color: #880015;
+}
+.pager__arrow-link:active {
+  background-color: #1e3d74;
+}
+.pager__arrow {
+  width: 15px;
+  height: 20px;
+}
+.pager__right-arrow {
+  transform: rotate(90deg);
+}
+.pager__left-arrow {
+  transform: rotate(-90deg);
+}
+.pager__links {
+  margin: 0px 16px;
+}
+.pager__link {
+  height: 100%;
+  padding: 16px 20px;
+}
+.pager__link:hover {
+  background-color: rgba(77, 153, 214, 0.5);
+}
+.pager__link.active {
+  cursor: default;
+  color: #fff;
+  background-color: #4d99d6;
+}/*# sourceMappingURL=union-documents.css.map */

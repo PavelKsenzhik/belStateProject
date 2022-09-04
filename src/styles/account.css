@@ -1,0 +1,43 @@
+.account {
+  display: flex;
+  flex-direction: column;
+}
+.account__body {
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.account__title {
+  width: 100%;
+}
+.account__avatar-img {
+  width: 100px;
+  height: 100px;
+}
+.account__info {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.account__name {
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+}
+.account__role {
+  color: #000;
+  font-size: 24px;
+}
+.account__tel {
+  color: #000;
+  font-size: 24px;
+}
+.account__mail {
+  color: #000;
+  font-size: 24px;
+}
+.account__room {
+  color: #000;
+  font-size: 24px;
+}/*# sourceMappingURL=account.css.map */

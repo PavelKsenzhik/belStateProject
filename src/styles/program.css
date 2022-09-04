@@ -1,0 +1,125 @@
+.program-content {
+  padding-right: 0px;
+}
+
+.program {
+  width: 100%;
+  margin-top: 70px;
+  background-image: url("../img/general/pages/program/program-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.program__body {
+  width: 100%;
+  height: 100%;
+  padding-right: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.program__title {
+  width: 33.3%;
+  font-size: 58px;
+}
+.program__info {
+  width: 66.7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.program__info-item {
+  width: 40%;
+  margin-bottom: 40px;
+  display: flex;
+}
+.program__icon {
+  height: 46px;
+  width: 46px;
+  margin-right: 26px;
+}
+.program__link:hover .program__subtitle {
+  color: #a10006;
+}
+.program__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.program__descr-link {
+  color: #59bde6;
+  border-bottom: 1px solid #81adbf;
+}
+.program__btn {
+  width: 394px;
+  align-self: flex-end;
+}
+
+@media (max-width: 1650px) {
+  .program__info-item {
+    width: 47%;
+  }
+}
+@media (max-width: 1560px) {
+  .program__title {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .program__info {
+    width: 100%;
+  }
+  .program__descr {
+    text-shadow: 0px 0px 0.5px #000;
+  }
+}
+@media (max-width: 1100px) {
+  .program__title {
+    font-size: 50px;
+  }
+  .program__info {
+    width: 100%;
+  }
+  .program__descr {
+    text-shadow: 0px 0px 0.5px #000;
+  }
+}
+@media (max-width: 840px) {
+  .program__title {
+    font-size: 50px;
+  }
+  .program__info {
+    width: 100%;
+  }
+  .program__info-item {
+    width: 100%;
+  }
+  .program__descr {
+    text-shadow: 0px 0px 0.5px #000;
+  }
+}
+@media (max-width: 650px) {
+  .program__body {
+    padding-right: 24px;
+  }
+  .program__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .program__info {
+    width: 100%;
+  }
+  .program__info-item {
+    width: 100%;
+  }
+  .program__icon {
+    margin-right: 16px;
+  }
+  .program__descr {
+    text-shadow: 0px 0px 0.5px #000;
+  }
+}
+@media (max-width: 470px) {
+  .program__title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=program.css.map */

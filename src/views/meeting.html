@@ -20,17 +20,20 @@
 </head>
 
 <body>
-    @@include("../blocks/modules/sideBar/sideBar.html")
-    <div class="header-wrapper content">
-        @@include("../blocks/modules/header/header.html")
-    </div>
-    <main class="meeting-content content main">
-        <div class="container">
-            <h1 class="meeting__title title_primary">Переговорная</h1>
+    <div class="content-wrapper">
+        @@include("../blocks/modules/sideBar/sideBar.html")
+        <div class="header-wrapper">
+            @@include("../blocks/modules/header/header.html")
         </div>
-
-    </main>
-    @@include("../blocks/modules/support/support.html")
+        <main class="main">
+            <div class="container">
+                <h1 class="meeting__title title_primary">Переговорная</h1>
+            </div>
+    
+        </main>
+        @@include("../blocks/modules/support/support.html")
+    </div>
+    
     <script type='text/javascript' src="js/main.js"></script>
 </body>
 </html>

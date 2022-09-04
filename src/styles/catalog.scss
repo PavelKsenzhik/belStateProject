@@ -9,7 +9,9 @@ $color-secondary: #f1f1f1;
 }
 
 .catalog {
+    padding-right: $var-padding-rigth;
     &__body {
+        
     }
     // Head
     &__head {

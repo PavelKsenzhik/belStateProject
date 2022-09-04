@@ -20,52 +20,54 @@
 </head>
 
 <body>
-    @@include("../blocks/modules/sideBar/sideBar.html")
-    <div class="header-wrapper content">
-        @@include("../blocks/modules/header/header.html")
-    </div>
-    <main class="birthdays-content content main">
-        <section class="birthdays">
-            <div class="container">
-                <div class="birthdays__body">
-                    <div class="birthdays__head">
-                        <h2 class="birhdays__title title_primary">дни рождения</h2>
-                    </div>
-                    <div class="birthdays__days">
-                        <!-- Day -->
-                        <div class="birthdays__day">
-                            <h4 class="birthdays__day-subtitle subtitle_primary">5 сентября</h4>
-                            <div class="birthdays__day-accounts">
-                                @@include("../blocks/modules/profile/profile.html")
-                                @@include("../blocks/modules/profile/profile.html")
-                            </div>
+    <div class="content-wrapper">
+
+        @@include("../blocks/modules/sideBar/sideBar.html")
+        <div class="header-wrapper">
+            @@include("../blocks/modules/header/header.html")
+        </div>
+        <main class="main">
+            <section class="birthdays">
+                <div class="container">
+                    <div class="birthdays__body">
+                        <div class="birthdays__head">
+                            <h2 class="birhdays__title title_primary">дни рождения</h2>
                         </div>
-                        <!-- Day -->
-                        <div class="birthdays__day">
-                            <h4 class="birthdays__day-subtitle subtitle_primary">15 сентября</h4>
-                            <div class="birthdays__day-accounts">
-                                @@include("../blocks/modules/profile/profile.html")
-                                @@include("../blocks/modules/profile/profile.html")
-                                @@include("../blocks/modules/profile/profile.html")
+                        <div class="birthdays__days">
+                            <!-- Day -->
+                            <div class="birthdays__day">
+                                <h4 class="birthdays__day-subtitle subtitle_primary">5 сентября</h4>
+                                <div class="birthdays__day-accounts">
+                                    @@include("../blocks/modules/profile/profile.html")
+                                    @@include("../blocks/modules/profile/profile.html")
+                                </div>
                             </div>
-                        </div>
-                        <!-- Day -->
-                        <div class="birthdays__day">
-                            <h4 class="birthdays__day-subtitle subtitle_primary">20 сентября</h4>
-                            <div class="birthdays__day-accounts">
-                                @@include("../blocks/modules/profile/profile.html")
-                                @@include("../blocks/modules/profile/profile.html")
-                                @@include("../blocks/modules/profile/profile.html")
-                                @@include("../blocks/modules/profile/profile.html")
+                            <!-- Day -->
+                            <div class="birthdays__day">
+                                <h4 class="birthdays__day-subtitle subtitle_primary">15 сентября</h4>
+                                <div class="birthdays__day-accounts">
+                                    @@include("../blocks/modules/profile/profile.html")
+                                    @@include("../blocks/modules/profile/profile.html")
+                                    @@include("../blocks/modules/profile/profile.html")
+                                </div>
+                            </div>
+                            <!-- Day -->
+                            <div class="birthdays__day">
+                                <h4 class="birthdays__day-subtitle subtitle_primary">20 сентября</h4>
+                                <div class="birthdays__day-accounts">
+                                    @@include("../blocks/modules/profile/profile.html")
+                                    @@include("../blocks/modules/profile/profile.html")
+                                    @@include("../blocks/modules/profile/profile.html")
+                                    @@include("../blocks/modules/profile/profile.html")
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-
-    @@include("../blocks/modules/support/support.html")
+            </section>
+        </main>
+        @@include("../blocks/modules/support/support.html")
+    </div>
 
     <script type='text/javascript' src="js/main.js"></script>
 </body>

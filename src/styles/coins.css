@@ -1,0 +1,96 @@
+.coins__body {
+  display: flex;
+  flex-direction: column;
+}
+.coins__title {
+  margin-bottom: 60px;
+}
+.coins__main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.coins__amount {
+  width: 30%;
+  font-size: 80px;
+  font-weight: 700;
+  color: #4d99d6;
+}
+.coins__list {
+  width: 70%;
+}
+.coins__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.coins__item-amout-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d99d6;
+  color: #fff;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+}
+.coins__item-amout {
+  font-size: 30px;
+  font-weight: 700;
+}
+.coins__item-achievement {
+  margin: 0px 16px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.coins__item-date {
+  font-size: 24px;
+  font-weight: 400;
+}
+.coins__links-wrapper {
+  width: 100%;
+}
+.coins__bottom-pannel {
+  display: flex;
+  justify-content: flex-end;
+}
+.coins__bottom-btn {
+  padding: 21px 31px;
+}
+
+.download-field__list {
+  display: flex;
+  flex-direction: column;
+}
+.download-field__list span {
+  margin-right: 8px;
+}
+.download-field__item {
+  margin-top: 32px;
+}
+.download-field__link {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.download-field__text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-right: 8px;
+}
+.download-field__text:hover {
+  color: #880015;
+}
+.download-field__icon {
+  width: 31px;
+  height: 35px;
+  margin-right: 8px;
+}
+.download-field__size {
+  margin-right: 8px;
+  color: #000;
+}
+.download-field__type {
+  color: #000;
+}/*# sourceMappingURL=coins.css.map */

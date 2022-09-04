@@ -1,0 +1,10 @@
+.support-pannel {
+  padding-right: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.support-pannel__btn {
+  padding: 23px 31px;
+}/*# sourceMappingURL=support.css.map */

@@ -69,6 +69,8 @@ p,h1,h2,h3,h3,h4,h5,h6{
     color: $btn-active-text;
 }
 
+// Links
+
 .link {
     color: $link-color;
     transition-duration: 0.1s;
@@ -78,6 +80,29 @@ p,h1,h2,h3,h3,h4,h5,h6{
 }
 .link:active {
     color: $link-active-color;
+}
+
+.btn-link {
+    height: 71px;
+    border-radius: 20px;
+    border: 3px solid $btn-border;
+    background-color: $btn-bg;
+    color: $btn-text;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition-duration: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-link:hover {
+    color: $main-secondary-color;
+    background-color: $btn-hover-bg;
+    box-shadow: 0px 0px 5px $btn-hover-shadow;
+}
+.btn-link:active{
+    background-color: $btn-active-bg;
+    color: $btn-active-text;
 }
 
 // Main
@@ -105,12 +130,12 @@ p,h1,h2,h3,h3,h4,h5,h6{
 /* Content */
 
 .content-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.content {
+.header-wrapper {
     padding: 0px 60px 0px 109px;
 }
 
