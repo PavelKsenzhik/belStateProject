@@ -22,11 +22,22 @@
 <body>
     <div class="content-wrapper">
         @@include("../blocks/modules/sideBar/sideBar.html")
-        <div class="content">
+        <div class="header-wrapper">
             @@include("../blocks/modules/header/header.html")
         </div>
-    
         <main class="main">
+            <style>
+                .program {
+                    padding-bottom: 60px;
+                }
+                .support-pannel {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 60px;
+                    margin-bottom: 0px;
+                    padding-right: 0px;
+                }
+            </style>
             <section class="about">
                 <div class="container">
                     <div class="about__body">
@@ -74,11 +85,11 @@
                                 </div>
                             </div>
                         </div>
-                        @@include("../blocks/modules/support/support.html")
                     </div>
                 </div>
             </section>
         </main>
+        @@include("../blocks/modules/support/support.html")
     </div>
     
 

@@ -31,6 +31,16 @@
             @@include("../blocks/modules/header/header.html")
         </div>
         <main class="main">
+            <style>
+                .bottom-pannel {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 60px;
+                    margin-bottom: 0px;
+                    padding-right: 0px;
+                }
+                
+            </style>
             <section class="about">
                 <div class="about__body">
                     <div class="about__info about__banner-wrapper">
@@ -138,15 +148,16 @@
                             @@include("../blocks/modules/profile/profile.html")
                         </div>
                     </div>
-                    <div class="bottom-pannel">
-                        @@include("../blocks/modules/support/support.html")
-                        <button class="bottom-pannel__sos-btn btn">sos</button>
-                    </div>
+
                 </div>
                 
             </section>
         </main>
-
+        <div class="bottom-pannel">
+            @@include("../blocks/modules/support/support.html")
+            <button class="bottom-pannel__sos-btn btn">sos</button>
+        </div>
+        
     </div>
    
     <script src="js/main.js"></script>

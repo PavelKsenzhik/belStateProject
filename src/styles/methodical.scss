@@ -1,21 +1,24 @@
+@import "helpers/variables";
+
+.support-pannel {
+padding-right: 0PX;
+}
 
 /* Right Content */
 
-.right-content-methodical {
+.methodical-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    padding-right: $var-padding-rigth;
 }
 
-.main-content__title{
+.methodical-content {
+    width: 80%;
+}
+
+.methodical-content__title{
     padding-left: 48px;
     margin-bottom: 32px;
 }
-.main-content {
-    width: 80%;
-}
-.main-content__title {
-}
-
 
 /* Docs */
 
@@ -132,7 +135,7 @@
 .video {
     width: 100%;
     min-height: 650px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 .video__body {
     display: flex;

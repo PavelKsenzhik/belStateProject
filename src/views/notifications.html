@@ -20,53 +20,53 @@
 </head>
 
 <body>
-    @@include("../blocks/modules/sideBar/sideBar.html")
-    <div class="header-wrapper content">
-        @@include("../blocks/modules/header/header.html")
-    </div>
-    <main class="notifications-content content main">
-        <section class="notifications">
-            <div class="container">
-                <div class="notifications__body">
-                    <h2 class="notifications__title title_primary">оповещения</h2>
-                    <ul class="notifications__list">
-                        <li class="notification">
-                            <p class="notification__date">01.05.2022</p>
-                            <p class="notification__time">13:05</p>
-                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
-                        </li>
-                        <li class="notification">
-                            <p class="notification__date">02.05.2022</p>
-                            <p class="notification__time">10:10</p>
-                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
-                        </li>
-                        <li class="notification">
-                            <p class="notification__date">03.05.2022</p>
-                            <p class="notification__time">09:05</p>
-                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
-                        </li>
-                        <li class="notification">
-                            <p class="notification__date">04.05.2022</p>
-                            <p class="notification__time">08:02</p>
-                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
-                        </li>
-                        <li class="notification">
-                            <p class="notification__date">05.05.2022</p>
-                            <p class="notification__time">10:05</p>
-                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
-                        </li>
-                        <li class="notification">
-                            <p class="notification__date">06.05.2022</p>
-                            <p class="notification__time">11:05</p>
-                            <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
-                        </li>
-                    </ul>
-                    <div class="notifications__bottom-pannel">
-                        <button class="notifications__bottom-btn btn">задать вопрос руководству</button>
+    <div class="content-wrapper">
+        @@include("../blocks/modules/sideBar/sideBar.html")
+        <div class="header-wrapper">
+            @@include("../blocks/modules/header/header.html")
+        </div>
+        <main class="main">
+            <section class="notifications">
+                <div class="container">
+                    <div class="notifications__body">
+                        <h2 class="notifications__title title_primary">оповещения</h2>
+                        <ul class="notifications__list">
+                            <li class="notification">
+                                <p class="notification__date">01.05.2022</p>
+                                <p class="notification__time">13:05</p>
+                                <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                            </li>
+                            <li class="notification">
+                                <p class="notification__date">02.05.2022</p>
+                                <p class="notification__time">10:10</p>
+                                <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                            </li>
+                            <li class="notification">
+                                <p class="notification__date">03.05.2022</p>
+                                <p class="notification__time">09:05</p>
+                                <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                            </li>
+                            <li class="notification">
+                                <p class="notification__date">04.05.2022</p>
+                                <p class="notification__time">08:02</p>
+                                <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                            </li>
+                            <li class="notification">
+                                <p class="notification__date">05.05.2022</p>
+                                <p class="notification__time">10:05</p>
+                                <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                            </li>
+                            <li class="notification">
+                                <p class="notification__date">06.05.2022</p>
+                                <p class="notification__time">11:05</p>
+                                <a class="notification__link link" href="#">Загружен новый документ «Основы строительной деятельности» </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+        @@include("../blocks/modules/support/support.html")
+    </div>
 </body>
 </html>
