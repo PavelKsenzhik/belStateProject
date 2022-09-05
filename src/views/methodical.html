@@ -20,12 +20,20 @@
 </head>
 
 <body>
-    @@include("../blocks/modules/sideBar/sideBar.html")
-    <div class="content">
+    <div class="content-wrapper">
+
+        @@include("../blocks/modules/sideBar/sideBar.html")
+
         <div class="header-wrapper">
             @@include("../blocks/modules/header/header.html")
-        </div>
+        </div>   
+
         <main class="main">
+            <style>
+                .support-pannel {
+                    padding-right: 21%;
+                }
+            </style>
             <div class="methodical-wrapper">
                 <div class="methodical-content">
                     <h1 class="methodical-content__title title title_primary">методическая работа</h1>
@@ -177,7 +185,6 @@
                         <button class="video__main-btn">Больше видеоматериалов</button>
                         
                     </section>
-                    @@include("../blocks/modules/support/support.html")
                 </div>
                 <aside class="right-sidebar">
                     <h3 class="right-sidebar__title">методическая работа</h3>
@@ -203,8 +210,9 @@
                 </aside>
             </div>
         </main>
-
+        @@include("../blocks/modules/support/support.html")
     </div>
+    
     <script type='text/javascript' src="js/main.js"></script>
 </body>
 
