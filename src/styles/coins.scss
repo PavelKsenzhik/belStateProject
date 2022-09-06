@@ -1,135 +1,137 @@
 @import "helpers/variables";
 
-.coins {
-    &__body {
-        display: flex;
-        flex-direction: column;
+.coins-page {
+    .coins {
+        &__body {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__title {
+            margin-bottom: 60px;
+        }
+    
+        &__main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__amount {
+            width: 30%;
+            font-size: 80px;
+            font-weight: 700;
+            color: #4d99d6;
+        }
+    
+        &__list {
+            width: 70%;
+        }
+    
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+    
+        &__item-amout-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $main-secondary-color;
+            color: #fff;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+        }
+    
+        &__item-amout {
+            font-size: 30px;
+            font-weight: 700;
+        }
+    
+        &__item-achievement {
+            margin: 0px 16px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    
+        &__item-date {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    
+        &__links-wrapper {
+            width: 100%;
+        }
+    
+        &__links {}
+    
+        &__download-field-item {}
+    
+        &__download-field-link {}
+    
+        &__download-field-text {}
+    
+        &__download-field-icon {}
+    
+        &__download-field-size {}
+    
+        &__download-field-type {}
+    
+        &__bottom-pannel {
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+        &__bottom-btn {
+            padding: 21px 31px;
+        }
     }
-
-    &__title {
-        margin-bottom: 60px;
-    }
-
-    &__main-content {
-        flex-grow: 1;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__amount {
-        width: 30%;
-        font-size: 80px;
-        font-weight: 700;
-        color: #4d99d6;
-    }
-
-    &__list {
-        width: 70%;
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 16px;
-    }
-
-    &__item-amout-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $main-secondary-color;
-        color: #fff;
-        border-radius: 50%;
-        width: 66px;
-        height: 66px;
-    }
-
-    &__item-amout {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    &__item-achievement {
-        margin: 0px 16px;
-        font-size: 24px;
-        font-weight: 400;
-    }
-
-    &__item-date {
-        font-size: 24px;
-        font-weight: 400;
-    }
-
-    &__links-wrapper {
-        width: 100%;
-    }
-
-    &__links {}
-
-    &__download-field-item {}
-
-    &__download-field-link {}
-
-    &__download-field-text {}
-
-    &__download-field-icon {}
-
-    &__download-field-size {}
-
-    &__download-field-type {}
-
-    &__bottom-pannel {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    &__bottom-btn {
-        padding: 21px 31px;
-    }
-}
-
-.download-field {
-    &__list {
-        display: flex;
-        flex-direction: column;
-
-        & span {
+    
+    .download-field {
+        &__list {
+            display: flex;
+            flex-direction: column;
+    
+            & span {
+                margin-right: 8px;
+            }
+        }
+    
+        &__item {
+            margin-top: 32px;
+        }
+    
+        &__link {
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    
+        &__text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            margin-right: 8px;
+            &:hover {
+                color: $main-active-color;
+            }
+        }
+    
+        &__icon {
+            width: 31px;
+            height: 35px;
             margin-right: 8px;
         }
-    }
-
-    &__item {
-        margin-top: 32px;
-    }
-
-    &__link {
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    &__text {
-        font-size: 24px;
-        font-weight: 700;
-        color: #000;
-        margin-right: 8px;
-        &:hover {
-            color: $main-active-color;
+    
+        &__size {
+            margin-right: 8px;
+            color: #000;
         }
-    }
-
-    &__icon {
-        width: 31px;
-        height: 35px;
-        margin-right: 8px;
-    }
-
-    &__size {
-        margin-right: 8px;
-        color: #000;
-    }
-
-    &__type {
-        color: #000;
+    
+        &__type {
+            color: #000;
+        }
     }
 }

@@ -1,61 +1,70 @@
-/* About */
+.university-page {
+    /* About */
 
-.about {
-    width: 100%;
-    margin-top: 70px;
-    flex-grow: 1;
-    background-image: url('../img/general/pages//university/about-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.about__body {
-    width: 100%;
-    padding-right: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-.about__title {
-    width: 33.3%;
-    font-size: 58px;
-}
-.about__info {
-    width: 66.7%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.about__info-item {
-    width: 40%;
-    margin-bottom: 40px;
-    display: flex;
+    .about {
+        width: 100%;
+        margin-top: 70px;
+        flex-grow: 1;
+        background-image: url('../img/general/pages//university/about-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-}
-.about__icon {
-    height: 46px;
-    width: 46px;
-    margin-right: 26px;
-}
-.about__text {
+    .about__body {
+        width: 100%;
+        padding-right: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 
-}
-.about__link{
+    .about__title {
+        width: 33.3%;
+        font-size: 58px;
+    }
 
-}
-.about__link:hover .about__subtitle{
-    color: #a10006;
-}
-.about__subtitle {
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-.about__descr {
-}
-.about__descr-link {
-    color: #59bde6;
-    border-bottom: 1px solid #81adbf;
-}
-.about__btn {
-    width: 394px;
-    align-self: flex-end;
+    .about__info {
+        width: 66.7%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .about__info-item {
+        width: 40%;
+        margin-bottom: 40px;
+        display: flex;
+
+    }
+
+    .about__icon {
+        height: 46px;
+        width: 46px;
+        margin-right: 26px;
+    }
+
+    .about__text {}
+
+    .about__link {}
+
+    .about__link:hover .about__subtitle {
+        color: #a10006;
+    }
+
+    .about__subtitle {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    .about__descr {}
+
+    .about__descr-link {
+        color: #59bde6;
+        border-bottom: 1px solid #81adbf;
+    }
+
+    .about__btn {
+        width: 394px;
+        align-self: flex-end;
+    }
 }

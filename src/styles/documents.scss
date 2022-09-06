@@ -1,175 +1,177 @@
 @import "helpers/variables";
 
-.documents {
-    flex-grow: 1;
-    margin-bottom: 40px;
-}
-
-// Documents Head
-
-.documents {
-    &__head {
-        width: 100%;
-        height: 65px;
-        background-color: #f3f3f3;
+.documents-page {
+    .documents {
+        flex-grow: 1;
+        margin-bottom: 40px;
     }
-    &__head-pannel {
-        width: 100%;
-        height: 100%;
-        padding-right: $var-padding-rigth;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__head-links {
-        width: calc(65% - 4px);
-        display: flex;
-    }
-    &__head-item {
-
-    }
-    &__head-link {
-        color: $main-secondary-color;
-        margin-right: 40px;
-        border-bottom: 2px solid $main-secondary-color;
-        &:hover {
-            border-bottom: 2px solid $link-hover-color;
+    
+    // Documents Head
+    
+    .documents {
+        &__head {
+            width: 100%;
+            height: 65px;
+            background-color: #f3f3f3;
         }
-        &.active{
-            cursor: default;
-            color: $main-color;
-            border: none;
+        &__head-pannel {
+            width: 100%;
+            height: 100%;
+            padding-right: $var-padding-rigth;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__head-links {
+            width: calc(65% - 4px);
+            display: flex;
+        }
+        &__head-item {
+    
+        }
+        &__head-link {
+            color: $main-secondary-color;
+            margin-right: 40px;
+            border-bottom: 2px solid $main-secondary-color;
+            &:hover {
+                border-bottom: 2px solid $link-hover-color;
+            }
+            &.active{
+                cursor: default;
+                color: $main-color;
+                border: none;
+            }
+        }
+        &__head-search-bar {
+            display: flex;
+            justify-content: flex-end;
+            width: calc($seacrh-bar-width + 4px);
+        }
+        &__head-search-btn {
+        }
+        &__head-search-icon {
+        }
+        &__head-search-input {
+        width: 100%;
         }
     }
-    &__head-search-bar {
-        display: flex;
-        justify-content: flex-end;
-        width: calc($seacrh-bar-width + 4px);
+    
+    // Download Field
+    
+    .documents {
+        &__download-field {
+        }
+        &__download-field-list {
+        }
+        &__download-field-item {
+        }
+        &__download-field-text {
+        }
+        &__download-field-icon {
+        }
+        &__download-field-size {
+        }
+        &__download-field-type {
+        }
     }
-    &__head-search-btn {
-    }
-    &__head-search-icon {
-    }
-    &__head-search-input {
-    width: 100%;
-    }
-}
-
-// Download Field
-
-.documents {
-    &__download-field {
-    }
-    &__download-field-list {
-    }
-    &__download-field-item {
-    }
-    &__download-field-text {
-    }
-    &__download-field-icon {
-    }
-    &__download-field-size {
-    }
-    &__download-field-type {
-    }
-}
-.download-field {
-    &__list {
-        display: flex;
-        flex-direction: column;
-        & span {
+    .download-field {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            & span {
+                margin-right: 8px;
+            }
+        }
+        &__item {
+            margin-top: 32px;
+        }
+        &__link {
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__text {
+            font-size: 24px;
+            color: #000;
+            margin-right: 8px;
+            &:hover {
+                color: $main-active-color;
+            }
+        }
+        &__icon {
+            width: 31px;
+            height: 35px;
             margin-right: 8px;
         }
-    }
-    &__item {
-        margin-top: 32px;
-    }
-    &__link {
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    &__text {
-        font-size: 24px;
-        color: #000;
-        margin-right: 8px;
-        &:hover {
-            color: $main-active-color;
+        &__size {
+            color: #000;
+        }
+        &__type {
+            color: #000;
         }
     }
-    &__icon {
-        width: 31px;
-        height: 35px;
-        margin-right: 8px;
+    
+    // Bottom Pannel
+    
+    .bottom-pannel {
+        margin-top: 40px;
+        &__body {
+            width: 100%;
+            padding-right: $var-padding-rigth;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__btn {
+            padding: 21px 31px;
+        }
     }
-    &__size {
-        color: #000;
-    }
-    &__type {
-        color: #000;
-    }
-}
-
-// Bottom Pannel
-
-.bottom-pannel {
-    margin-top: 40px;
-    &__body {
-        width: 100%;
-        padding-right: $var-padding-rigth;
+    
+    .pager {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    &__btn {
-        padding: 21px 31px;
-    }
-}
-
-.pager {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__arrow-link {
-        cursor: pointer;
-        padding: 10px 12px;
-        border-radius: 50%;
-        background-color: $main-secondary-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &:hover {
-            background-color: $main-active-color;
-        }
-        &:active{
-            background-color: $link-active-color;
-        }
-    }
-    &__arrow {
-        width: 15px;
-        height: 20px;
-    }
-    &__right-arrow {
-        transform: rotate(90deg);
-    }
-    &__left-arrow {
-        transform: rotate(-90deg);
-    }
-    &__links {
-        margin: 0px 16px;
-    }
-    &__link {
-        height: 100%;
-        padding: 16px 20px;
-        &:hover {
-            background-color: rgba(77, 153, 214, 0.5);
-        }
-        &.active{
-            cursor: default;
-            color: #fff;
+        &__arrow-link {
+            cursor: pointer;
+            padding: 10px 12px;
+            border-radius: 50%;
             background-color: $main-secondary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: $main-active-color;
+            }
+            &:active{
+                background-color: $link-active-color;
+            }
         }
+        &__arrow {
+            width: 15px;
+            height: 20px;
+        }
+        &__right-arrow {
+            transform: rotate(90deg);
+        }
+        &__left-arrow {
+            transform: rotate(-90deg);
+        }
+        &__links {
+            margin: 0px 16px;
+        }
+        &__link {
+            height: 100%;
+            padding: 16px 20px;
+            &:hover {
+                background-color: rgba(77, 153, 214, 0.5);
+            }
+            &.active{
+                cursor: default;
+                color: #fff;
+                background-color: $main-secondary-color;
+            }
+        }
+    
     }
-
 }
