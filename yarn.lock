@@ -2409,6 +2409,7 @@ __metadata:
     postcss-scss: ^4.0.3
     require-dir: ^1.2.0
     sass: ^1.49.9
+    scss-concat: ^0.3.9
     stylelint: ^14.5.3
     stylelint-config-standard-scss: ^3.0.0
     stylelint-order: ^5.0.0
@@ -12939,6 +12940,13 @@ bem-tools-create@bem-tools/bem-tools-create:
     ajv: ^6.12.5
     ajv-keywords: ^3.5.2
   checksum: fb73f3d759d43ba033c877628fe9751620a26879f6301d3dbeeb48cf2a65baec5cdf99da65d1bf3b4ff5444b2e59cbe4f81c2456b5e0d2ba7d7fd4aed5da29ce
+  languageName: node
+  linkType: hard
+
+"scss-concat@npm:^0.3.9":
+  version: 0.3.9
+  resolution: "scss-concat@npm:0.3.9"
+  checksum: 83bb95631da4799ff19bfc6abef038a45740c93aa14f7faceaec7b36dca79327a4c8f4f1f91f95151bef7c632828ace93be471dcb3a10eef733f861e242f3548
   languageName: node
   linkType: hard
 

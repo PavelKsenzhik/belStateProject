@@ -117,7 +117,7 @@ p,h1,h2,h3,h3,h4,h5,h6{
 
 /* Container */
 
-.container {
+.page-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -145,7 +145,7 @@ p,h1,h2,h3,h3,h4,h5,h6{
 
 
 @media (max-width: 650px) {
-    .container {
+    .page-container {
         padding-left: 24px;
     }
 }
